@@ -1,0 +1,21 @@
+{
+	"bildeto": "?",
+	"dato": [2016, 8, 7],
+	"koloro": "blue",
+	"kreanto": "matma6",
+	"markoj": [
+		"pri mi"
+	],
+	"tradukoj": {
+		"eo": {
+			"titolo": "Informacioj pri mi",
+			"mallonga_titolo": "Pri mi",
+			"slugo": "pri_mi"
+		},
+		"pl": {
+			"titolo": "Informacje o mnie",
+			"mallonga_titolo": "O mnie",
+			"slugo": "o_mnie"
+		}
+	}
+}
