@@ -34,6 +34,7 @@ metu_tekstojn(Vojo) :-
 legu_paghon(Vojo) :-
 	string_concat(Vojo, "/meta.json", Meta),
 	legu_json(Meta, Dikto),
+	assert(pagho(Vojo)),
 	metu_atributojn(Vojo, Dikto),
 	metu_tekstojn(Vojo),
 	(lega_hoko(Vojo, Dikto); true).
