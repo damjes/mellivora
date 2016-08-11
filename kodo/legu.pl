@@ -20,7 +20,16 @@ metu_atributon(Vojo, Atributo, Valoro) :-
 metu_atributojn(Vojo, Dikto) :-
 	metu_atributon(Vojo, Atributo, Dikto.Atributo); true.
 
-metu_tekstojn(_).
+aldonu_tekston(Vojo) :-
+	file_directory_name(Vojo, Dosieraro),
+	file_base_name(Vojo, Nomo),
+	split_string(Nomo, "-_.", "", [Lingvo, Ero, "mmd"]),
+	assert(fonta_teksto(Dosieraro, Lingvo, Ero, Vojo)).
+
+metu_tekstojn(Vojo) :-
+	string_concat(Vojo, "/*.mmd", Vojo2),
+	expand_file_name(Vojo2, Listo),
+	maplist(aldonu_tekston, Listo).
 
 legu_paghon(Vojo) :-
 	string_concat(Vojo, "/meta.json", Meta),
@@ -28,3 +37,10 @@ legu_paghon(Vojo) :-
 	metu_atributojn(Vojo, Dikto),
 	metu_tekstojn(Vojo),
 	(lega_hoko(Vojo, Dikto); true).
+
+legu_dosieron(Vojo) :-
+	legu_paghon(Vojo),
+	string_concat(Vojo, "/*", Vojo2),
+	expand_file_name(Vojo2, Dosieroj),
+	include(exists_directory, Dosieroj, Dosieraroj),
+	maplist(legu_dosieron, Dosieraroj).
