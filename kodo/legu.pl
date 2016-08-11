@@ -38,9 +38,13 @@ legu_paghon(Vojo) :-
 	metu_tekstojn(Vojo),
 	(lega_hoko(Vojo, Dikto); true).
 
+legu_dosieron(Patro, Vojo) :-
+	legu_dosieron(Vojo),
+	assert(patro(Patro, Vojo)).
+
 legu_dosieron(Vojo) :-
 	legu_paghon(Vojo),
 	string_concat(Vojo, "/*", Vojo2),
 	expand_file_name(Vojo2, Dosieroj),
 	include(exists_directory, Dosieroj, Dosieraroj),
-	maplist(legu_dosieron, Dosieraroj).
+	maplist(legu_dosieron(Vojo), Dosieraroj).
