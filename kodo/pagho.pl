@@ -11,3 +11,7 @@ valoro(Id, Lingvo, Nomo, Valoro) :-
 	fonta_teksto(Id, Lingvo, Ero, Vojo),
 	dosiernomo(Ero, Nomo),
 	=(Vojo, Valoro). % FARENDA (TODO)
+
+generu_dikton(Id, Lingvo, Dikto) :-
+	findall(Nomo-Valoro, valoro(Id, Lingvo, Nomo, Valoro), Paroj),
+	dict_pairs(Dikto, pagho, Paroj).

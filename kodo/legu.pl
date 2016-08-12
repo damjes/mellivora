@@ -25,7 +25,8 @@ metu_atributojn(Vojo, Dikto) :-
 aldonu_tekston(Vojo) :-
 	file_directory_name(Vojo, Dosieraro),
 	file_base_name(Vojo, Nomo),
-	split_string(Nomo, "-_.", "", [Lingvo, Ero, "mmd"]),
+	split_string(Nomo, "-_.", "", [LingvCheno, Ero, "mmd"]),
+	atom_string(Lingvo, LingvCheno),
 	assert(fonta_teksto(Dosieraro, Lingvo, Ero, Vojo)).
 
 metu_tekstojn(Vojo) :-
