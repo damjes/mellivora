@@ -15,18 +15,16 @@ metu_tradukojn(Vojo, Dikto) :-
 
 metu_atributon(Vojo, tradukoj, Dikto) :- !,
 	metu_tradukojn(Vojo, Dikto), fail.
-
 metu_atributon(Vojo, Atributo, Valoro) :-
 	assert(atributo(Vojo, Atributo, Valoro)), fail.
-
 metu_atributojn(Vojo, Dikto) :-
 	metu_atributon(Vojo, Atributo, Dikto.Atributo); true.
 
 aldonu_tekston(Vojo) :-
 	file_directory_name(Vojo, Dosieraro),
 	file_base_name(Vojo, Nomo),
-	split_string(Nomo, "-_.", "", [LingvCheno, Ero, "mmd"]),
-	atom_string(Lingvo, LingvCheno),
+	split_string(Nomo, "-_.", "", [Lingvcheno, Ero, "mmd"]),
+	atom_string(Lingvo, Lingvcheno),
 	assert(fonta_teksto(Dosieraro, Lingvo, Ero, Vojo)).
 
 metu_tekstojn(Vojo) :-
