@@ -15,3 +15,15 @@ valoro(Id, Lingvo, Nomo, Valoro) :-
 generu_dikton(Id, Lingvo, Dikto) :-
 	findall(Nomo-Valoro, valoro(Id, Lingvo, Nomo, Valoro), Paroj),
 	dict_pairs(Dikto, pagho, Paroj).
+
+radiko(Id) :-
+	patro(Id, _),
+	\+ patro(_, Id), !.
+
+vojo(Id, _, X, X) :-
+	radiko(Id).
+
+vojo(Id, Lingvo, X, Y) :-
+	valoro(Id, Lingvo, slugo, Slugo),
+	patro(Patro, Id),
+	vojo(Patro, Lingvo, X, [Slugo | Y]).
