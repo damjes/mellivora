@@ -9,7 +9,9 @@ legu_json(Vojo, Dikto) :-
 		close(Fluo)).
 
 metu_tradukojn(Vojo, Dikto) :-
-	assert(traduko(Vojo, Lingvo, Atributo, Dikto.Lingvo.Atributo)), fail.
+	Traduko = Dikto.Lingvo,
+	assert(lingvo(Vojo, Lingvo)),
+	assert(traduko(Vojo, Lingvo, Atributo, Traduko.Atributo)), fail.
 
 metu_atributon(Vojo, tradukoj, Dikto) :- !,
 	metu_tradukojn(Vojo, Dikto), fail.
