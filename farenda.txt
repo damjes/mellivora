@@ -1,0 +1,2 @@
+* generu MultiMarkDown en kodo/pagho.pl
+* faru kaŝejon

@@ -1,0 +1,22 @@
+{
+	"bildeto": "?",
+	"dato": [2016, 8, 7],
+	"koloro": "blue",
+	"kreanto": "matma6",
+	"markoj": [
+		"sekureco",
+		"kontakto"
+	],
+	"tradukoj": {
+		"eo": {
+			"titolo": "Mia GnuPG ŝlosilo",
+			"mallonga_titolo": "GnuPG",
+			"slugo": "shlosiloj"
+		},
+		"pl": {
+			"titolo": "Mój klucz GnuPG",
+			"mallonga_titolo": "GnuPG",
+			"slugo": "klucze"
+		}
+	}
+}

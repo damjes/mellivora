@@ -1,0 +1,1 @@
+:- [legu, pagho, retejo].
