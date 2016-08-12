@@ -57,3 +57,7 @@ flycheck_*.el
 
 # projectiles files
 .projectile
+
+### MIAJ ###
+
+/eligo/
