@@ -22,6 +22,11 @@ vojcheno(Id, Lingvo, Vojcheno) :-
 dosiernomo("1", unua).
 dosiernomo("2", dua).
 
+legu_mmd(Vojo, Cheno) :-
+	process_create(path(multimarkdown), [file(Vojo)], [stdout(pipe(Fluo))]),
+	read_stream_to_codes(Fluo, Kodoj),
+	string_codes(Cheno, Kodoj).
+
 valoro(Id, Lingvo, vojo, Vojo) :-
 	vojo(Id, Lingvo, Vojo, []).
 valoro(Id, _, Nomo, Valoro) :-
@@ -34,7 +39,7 @@ valoro(Id, Lingvo, Nomo, Valoro) :-
 	(
 			fonta_teksto(Id, Lingvo, Ero, Vojo)
 		*->
-			=(Vojo, Valoro) % FARENDA (TODO)
+			legu_mmd(Vojo, Valoro)
 		;
 			Valoro = ""
 	).
