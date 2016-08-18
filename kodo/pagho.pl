@@ -47,8 +47,8 @@ valoro(Id, Lingvo, Nomo, Valoro) :-
 	).
 valoro(Id, Lingvo, Nomo, Valoro) :-
 	implicita_valoro(Id, Lingvo, Nomo, Valoro),
-	\+ atributo(Id, Nomo, Valoro),
-	\+ traduko(Id, Lingvo, Nomo, Valoro).
+	\+ atributo(Id, Nomo, _),
+	\+ traduko(Id, Lingvo, Nomo, _).
 
 generu_dikton(Id, Lingvo, Dikto) :-
 	findall(Nomo-Valoro, valoro(Id, Lingvo, Nomo, Valoro), Paroj),
