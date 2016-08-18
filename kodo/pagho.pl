@@ -27,6 +27,8 @@ legu_mmd(Vojo, Cheno) :-
 	read_stream_to_codes(Fluo, Kodoj),
 	string_codes(Cheno, Kodoj).
 
+implicita_valoro(_, _, markoj, []).
+
 valoro(Id, Lingvo, vojo, Vojo) :-
 	vojo(Id, Lingvo, Vojo, []).
 valoro(Id, _, Nomo, Valoro) :-
@@ -43,6 +45,10 @@ valoro(Id, Lingvo, Nomo, Valoro) :-
 		;
 			Valoro = ""
 	).
+valoro(Id, Lingvo, Nomo, Valoro) :-
+	implicita_valoro(Id, Lingvo, Nomo, Valoro),
+	\+ atributo(Id, Nomo, Valoro),
+	\+ traduko(Id, Lingvo, Nomo, Valoro).
 
 generu_dikton(Id, Lingvo, Dikto) :-
 	findall(Nomo-Valoro, valoro(Id, Lingvo, Nomo, Valoro), Paroj),
