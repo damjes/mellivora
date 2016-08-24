@@ -14,7 +14,7 @@ Versio 0.3
 Versio 0.4
 ==========
 * [ ] generu paĝon kun markoj
-** [ ] generu paĝojn unu po marko kun ĉiuj paĝoj rilataj kun ĉi tia marko
+* [ ] generu paĝojn unu po marko kun ĉiuj paĝoj rilataj kun ĉi tia marko
 
 Versio 0.5
 ==========
