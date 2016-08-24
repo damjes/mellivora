@@ -21,6 +21,7 @@ Versio 0.5
 * [ ] generu menuon
 * [ ] generu ligilojn kun tradukoj
 * [ ] generu liston de markoj
+* [ ] generu enhavotabelon (vi povas sendi du tekstojn al `grep '^<h[1-6]'`)
 
 Versio 0.6
 ==========
