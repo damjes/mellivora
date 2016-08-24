@@ -8,8 +8,8 @@ Versio 0.3
 ==========
 * [ ] kreu bonan lokon por ŝablonoj/etosoj
 * [ ] kreu ilon por faciligi ŝablonkreado
-* [ ] generu on radiko/1 el legu_tutan_fonton/1, aŭ simila
-* [ ] movu eliro/eo/index.html al eliro/index.html
+* [ ] generu on `radiko/1` el `legu_tutan_fonton/1`, aŭ simila
+* [ ] movu `eliro/eo/index.html` al `eliro/index.html`
 
 Versio 0.4
 ==========
