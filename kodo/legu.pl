@@ -15,6 +15,7 @@ metu_atributon(Vojo, tradukoj, Dikto) :- !,
 	metu_tradukojn(Vojo, Dikto), fail.
 metu_atributon(Vojo, Atributo, Valoro) :-
 	assert(atributo(Vojo, Atributo, Valoro)), fail.
+
 metu_atributojn(Vojo, Dikto) :-
 	metu_atributon(Vojo, Atributo, Dikto.Atributo); true.
 
