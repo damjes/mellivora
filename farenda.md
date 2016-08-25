@@ -1,6 +1,10 @@
 Versio 0.2
 ==========
-* [ ] generu liston kun gefiloj
+* [x] generu liston kun idoj
+* [ ] aldonu funkcion al simple_template por preni valoroj el `valoro/4`
+* [ ] uzu liston kun ido en ŝablono
+* [ ] faru paĝonumeradon po dozeno de idoj en unu paĝo
+* [ ] prenu grandecon de paĝonumeradon el agordoj
 * [ ] generu paĝnivelon (angle breadcrumb)
 * [ ] kreu dokumentadon
 
