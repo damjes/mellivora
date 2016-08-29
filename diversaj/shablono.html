@@ -9,9 +9,14 @@
 		<p>Aŭtoro: {{= kreanto }}</p>
 		{{- unua }}
 		<hr />
-		{{- dua}}
-		<p>
-			{{= valoro(atom(fonto), atom(eo), atom(koloro))}}
-		</p>
+		{{- dua }}
+		<p>Idoj</p>
+		<ul>
+			{{ each praidaro, ido }}
+			<li>
+				<p>{{= valoro(ido, lingvo, atom(titolo)) }}</p>
+			</li>
+			{{ end }}
+		</ul>
 	</body>
 </html>
