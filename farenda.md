@@ -4,7 +4,7 @@ Versio 0.2
 * [x] aldonu funkcion al simple_template por preni valoroj el `valoro/4`
 * [x] uzu liston kun praidaro en ŝablono
 * [x] generu paĝnivelon (angle breadcrumb)
-* [ ] movu `eliro/eo/index.html` al `eliro/index.html`
+* [x] movu `eligo/eo/index.html` al `eligo/index.html`
 * [ ] kreu dokumentadon
 
 Versio 0.3
@@ -14,6 +14,7 @@ Versio 0.3
 * [ ] generu on `radiko/1` el `legu_tutan_fonton/1`, aŭ simila
 * [ ] faru paĝonumeradon po dozeno de idoj en unu paĝo
 * [ ] prenu grandecon de paĝonumeradon el agordoj
+* [ ] prenu implicitan lingvon el agordoj
 
 Versio 0.4
 ==========
@@ -27,6 +28,7 @@ Versio 0.5
 * [ ] generu liston de markoj
 * [ ] generu enhavotabelon (vi povas sendi du tekstojn al `grep '^<h[1-6]'`)
 
-Versio 0.6
+Versio 0.6+
 ==========
 * [ ] faru kaŝejon
+* [ ] metu iajn dosierojn e.g. bildojn
