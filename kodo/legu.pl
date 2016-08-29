@@ -1,7 +1,5 @@
 :- use_module(library(http/json)).
 
-:- dynamic lega_hoko/2.
-
 legu_json(Vojo, Dikto) :-
 	setup_call_cleanup(
 		open(Vojo, read, Fluo, [encoding(utf8)]),
@@ -17,6 +15,7 @@ metu_atributon(Vojo, tradukoj, Dikto) :- !,
 	metu_tradukojn(Vojo, Dikto), fail.
 metu_atributon(Vojo, Atributo, Valoro) :-
 	assert(atributo(Vojo, Atributo, Valoro)), fail.
+
 metu_atributojn(Vojo, Dikto) :-
 	metu_atributon(Vojo, Atributo, Dikto.Atributo); true.
 
@@ -38,7 +37,7 @@ legu_paghon(Vojo) :-
 	assert(pagho(Vojo)),
 	metu_atributojn(Vojo, Dikto),
 	metu_tekstojn(Vojo),
-	(lega_hoko(Vojo, Dikto); true).
+	(lega_hoko(Vojo, Dikto), fail; true).
 
 legu_dosieron(Patro, Vojo) :-
 	legu_dosieron(Vojo),

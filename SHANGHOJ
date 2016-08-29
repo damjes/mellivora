@@ -1,0 +1,12 @@
+v.0.2
+
+- dokumentado
+- oni povas uzi funkcion kun valoroj el `valoro/4`
+- implicita ligvo esperanto
+- ligilo generado
+- paĝnivelo
+- nun vi povas uzi radikon, lingvon kaj identigilon en ŝablono
+- `duplicate_key` eraro fiksita
+- implicitaj valoroj
+
+v.0.1
