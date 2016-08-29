@@ -1,1 +1,1 @@
-:- [idoj, st_funkcioj].
+:- [idoj, kunteksto, st_funkcioj].
