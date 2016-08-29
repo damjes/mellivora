@@ -5,7 +5,7 @@ Versio 0.2
 * [x] uzu liston kun praidaro en ŝablono
 * [x] generu paĝnivelon (angle breadcrumb)
 * [x] movu `eligo/eo/index.html` al `eligo/index.html`
-* [ ] kreu dokumentadon
+* [x] kreu dokumentadon
 
 Versio 0.3
 ==========
@@ -32,3 +32,4 @@ Versio 0.6+
 ==========
 * [ ] faru kaŝejon
 * [ ] metu iajn dosierojn e.g. bildojn
+* [ ] priskribu kodumadajn eblecojn
