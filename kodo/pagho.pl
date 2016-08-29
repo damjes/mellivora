@@ -2,12 +2,12 @@ radiko(Id) :-
 	patro(Id, _),
 	\+ patro(_, Id), !.
 
-vojo(Id, _, X, X) :-
+vojo(Id, _, _, X, X) :-
 	radiko(Id).
-vojo(Id, Lingvo, X, Y) :-
-	valoro(Id, Lingvo, slugo, Slugo),
+vojo(Id, Lingvo, Trajto, X, Y) :-
+	valoro(Id, Lingvo, Trajto, Valoro),
 	patro(Patro, Id),
-	vojo(Patro, Lingvo, X, [Slugo | Y]).
+	vojo(Patro, Lingvo, Trajto, X, [Valoro | Y]).
 
 gluu_vojon(Fino, Patro, Vojo) :-
 	atom_string(Fino, FinCheno),
@@ -16,7 +16,7 @@ gluu_vojon(Fino, Patro, Vojo) :-
 
 vojcheno(Id, Lingvo, Vojcheno) :-
 	atom_string(Lingvo, Lingvcheno),
-	vojo(Id, Lingvo, Vojo, []),
+	vojo(Id, Lingvo, slugo, Vojo, []),
 	foldl(gluu_vojon, Vojo, Lingvcheno, Vojcheno).
 
 dosiernomo("1", unua).
@@ -29,8 +29,8 @@ legu_mmd(Vojo, Cheno) :-
 
 implicita_valoro(_, _, markoj, []).
 
-valoro(Id, Lingvo, vojo, Vojo) :-
-	vojo(Id, Lingvo, Vojo, []).
+valoro(Id, Lingvo, titola_vojo, Vojo) :-
+	vojo(Id, mallonga_titolo, Lingvo, Vojo, []).
 valoro(Id, _, Nomo, Valoro) :-
 	atributo(Id, Nomo, Valoro).
 valoro(Id, Lingvo, Nomo, Valoro) :-
