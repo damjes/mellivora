@@ -11,16 +11,22 @@
 		<hr />
 		{{- dua }}
 		<p>
-			{{= valoro(radiko_id, lingvo, atom(mallonga_titolo)) }}
+			<a href="{{= valoro(radiko_id, lingvo, atom(ligilo)) }}">
+				{{= valoro(radiko_id, lingvo, atom(mallonga_titolo)) }}
+			</a>
 			{{ each vojo, shtupo }}
 				>>
-				{{= valoro(shtupo, lingvo, atom(mallonga_titolo)) }}
+				<a href="{{= valoro(shtupo, lingvo, atom(ligilo)) }}">
+					{{= valoro(shtupo, lingvo, atom(mallonga_titolo)) }}
+				</a>
 			{{ end }}
 		<p>Idoj</p>
 		<ul>
 			{{ each praidaro, ido }}
 			<li>
-				<p>{{= valoro(ido, lingvo, atom(titolo)) }}</p>
+				<a href="{{= valoro(ido, lingvo, atom(ligilo)) }}">
+					{{= valoro(ido, lingvo, atom(titolo)) }}
+				</a>
 			</li>
 			{{ end }}
 		</ul>

@@ -2,7 +2,7 @@
 
 dosiernomo(Id, Lingvo, Dosiernomo) :-
 	vojcheno(Id, Lingvo, Fino),
-	string_concat("eligo/", Fino, Dosierarnomo),
+	string_concat("eligo", Fino, Dosierarnomo),
 	make_directory_path(Dosierarnomo),
 	string_concat(Dosierarnomo, "/index.html", Dosiernomo).
 

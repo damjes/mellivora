@@ -14,10 +14,14 @@ gluu_vojon(Fino, Patro, Vojo) :-
 	string_concat(Patro, "/", Patro2),
 	string_concat(Patro2, FinCheno, Vojo).
 
+% ĉefa paĝo en ĉefa lingvo estas ĉefa
+% eo estas fiksita ĉefa lingvo (TODO)
+vojcheno(Id, eo, "/") :-
+	radiko(Id), !.
 vojcheno(Id, Lingvo, Vojcheno) :-
 	atom_string(Lingvo, Lingvcheno),
 	vojo(Id, Lingvo, slugo, Vojo, []),
-	foldl(gluu_vojon, Vojo, Lingvcheno, Vojcheno).
+	foldl(gluu_vojon, [Lingvcheno | Vojo], "", Vojcheno).
 
 dosiernomo("1", unua).
 dosiernomo("2", dua).
