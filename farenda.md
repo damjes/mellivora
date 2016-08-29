@@ -3,7 +3,7 @@ Versio 0.2
 * [x] generu liston kun idoj
 * [x] aldonu funkcion al simple_template por preni valoroj el `valoro/4`
 * [x] uzu liston kun praidaro en ŝablono
-* [ ] generu paĝnivelon (angle breadcrumb)
+* [x] generu paĝnivelon (angle breadcrumb)
 * [ ] movu `eliro/eo/index.html` al `eliro/index.html`
 * [ ] kreu dokumentadon
 

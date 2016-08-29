@@ -10,6 +10,12 @@
 		{{- unua }}
 		<hr />
 		{{- dua }}
+		<p>
+			{{= valoro(radiko_id, lingvo, atom(mallonga_titolo)) }}
+			{{ each vojo, shtupo }}
+				>>
+				{{= valoro(shtupo, lingvo, atom(mallonga_titolo)) }}
+			{{ end }}
 		<p>Idoj</p>
 		<ul>
 			{{ each praidaro, ido }}
