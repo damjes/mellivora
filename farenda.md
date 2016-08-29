@@ -1,12 +1,3 @@
-Versio 0.2
-==========
-* [x] generu liston kun idoj
-* [x] aldonu funkcion al simple_template por preni valoroj el `valoro/4`
-* [x] uzu liston kun praidaro en ŝablono
-* [x] generu paĝnivelon (angle breadcrumb)
-* [x] movu `eligo/eo/index.html` al `eligo/index.html`
-* [x] kreu dokumentadon
-
 Versio 0.3
 ==========
 * [ ] kreu bonan lokon por ŝablonoj/etosoj
