@@ -29,8 +29,8 @@ legu_mmd(Vojo, Cheno) :-
 
 implicita_valoro(_, _, markoj, []).
 
-valoro(Id, Lingvo, titola_vojo, Vojo) :-
-	vojo(Id, mallonga_titolo, Lingvo, Vojo, []).
+valoro(Id, Lingvo, vojo, Vojo) :-
+	vojo(Id, id, Lingvo, Vojo, []).
 valoro(Id, _, Nomo, Valoro) :-
 	atributo(Id, Nomo, Valoro).
 valoro(Id, Lingvo, Nomo, Valoro) :-
