@@ -3,9 +3,8 @@ Versio 0.2
 * [x] generu liston kun idoj
 * [ ] aldonu funkcion al simple_template por preni valoroj el `valoro/4`
 * [ ] uzu liston kun ido en ŝablono
-* [ ] faru paĝonumeradon po dozeno de idoj en unu paĝo
-* [ ] prenu grandecon de paĝonumeradon el agordoj
 * [ ] generu paĝnivelon (angle breadcrumb)
+* [ ] movu `eliro/eo/index.html` al `eliro/index.html`
 * [ ] kreu dokumentadon
 
 Versio 0.3
@@ -13,7 +12,8 @@ Versio 0.3
 * [ ] kreu bonan lokon por ŝablonoj/etosoj
 * [ ] kreu ilon por faciligi ŝablonkreado
 * [ ] generu on `radiko/1` el `legu_tutan_fonton/1`, aŭ simila
-* [ ] movu `eliro/eo/index.html` al `eliro/index.html`
+* [ ] faru paĝonumeradon po dozeno de idoj en unu paĝo
+* [ ] prenu grandecon de paĝonumeradon el agordoj
 
 Versio 0.4
 ==========
