@@ -4,7 +4,13 @@ Statika retpaĝo - dokumentado
 Instalado
 ---------
 
-Vi bezonas SWI-Prolog en sepa versio (ol pli granda) kun "simple_template" aldonaĵo. Ankaŭ vi bezonas MultiMarkDown en via `PATH`. Sekve vi bezonas kodon - vi povas preni tion el ia Gita deponejo:
+Vi bezonas SWI-Prolog en sepa versio (ol pli granda) kun "simple_template" aldonaĵo. Vi povas instali tion tiel:
+
+```
+?- pack_install(simple_template).
+```
+
+Ankaŭ vi bezonas MultiMarkDown en via `PATH`. Sekve vi bezonas kodon - vi povas preni tion el ia Gita deponejo:
 
 - https://gitlab.matma6.net/matma6/statikaRetpagho.git - ĉefa
 - https://bitbucket.org/matma6/statikaretpagho.git
