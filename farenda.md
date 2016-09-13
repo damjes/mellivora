@@ -24,3 +24,19 @@ Versio 0.6+
 * [ ] faru kaŝejon
 * [ ] metu iajn dosierojn e.g. bildojn
 * [ ] priskribu kodumadajn eblecojn
+
+Ekpensoj
+========
+- ŝanĝu ID el 'fonto/primi' al vojo('fonto/primi')
+- faru liston de idoj (ankaŭ kun ligiloj)
+- aŭtomate kreu multivalorajn listojn, ekzemplo:
+
+```
+valorparto(a, eo, v, a).
+valorparto(a, eo, v, b).
+valorparto(a, eo, v, c).
+```
+
+do veras: `valoro(a, eo, v, [a, b, c]).`
+
+Oni povas uzi tion por krei liston de idoj aŭ markoj.
