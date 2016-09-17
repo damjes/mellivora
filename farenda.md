@@ -27,7 +27,6 @@ Versio 0.6+
 
 Ekpensoj
 ========
-- ŝanĝu ID el 'fonto/primi' al vojo('fonto/primi')
 - faru liston de idoj (ankaŭ kun ligiloj)
 - aŭtomate kreu multivalorajn listojn, ekzemplo:
 

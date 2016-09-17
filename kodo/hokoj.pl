@@ -1,5 +1,5 @@
 :- dynamic marko/2.
 
-lega_hoko(Vojo, Dikto) :-
+lega_hoko(ID, _, Dikto) :-
 	member(Marko, Dikto.get(markoj)),
-	assert(marko(Vojo, Marko)).
+	assert(marko(ID, Marko)).

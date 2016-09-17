@@ -6,46 +6,46 @@ legu_json(Vojo, Dikto) :-
 		json_read_dict(Fluo, Dikto),
 		close(Fluo)).
 
-metu_tradukojn(Vojo, Dikto) :-
+metu_tradukojn(ID, Dikto) :-
 	Traduko = Dikto.Lingvo,
-	assert(lingvo(Vojo, Lingvo)),
-	assert(traduko(Vojo, Lingvo, Atributo, Traduko.Atributo)), fail.
+	assert(lingvo(ID, Lingvo)),
+	assert(traduko(ID, Lingvo, Atributo, Traduko.Atributo)), fail.
 
-metu_atributon(Vojo, tradukoj, Dikto) :- !,
-	metu_tradukojn(Vojo, Dikto), fail.
-metu_atributon(Vojo, Atributo, Valoro) :-
-	assert(atributo(Vojo, Atributo, Valoro)), fail.
+metu_atributon(ID, tradukoj, Dikto) :- !,
+	metu_tradukojn(ID, Dikto), fail.
+metu_atributon(ID, Atributo, Valoro) :-
+	assert(atributo(ID, Atributo, Valoro)), fail.
 
-metu_atributojn(Vojo, Dikto) :-
-	metu_atributon(Vojo, Atributo, Dikto.Atributo); true.
+metu_atributojn(ID, Dikto) :-
+	metu_atributon(ID, Atributo, Dikto.Atributo); true.
 
-aldonu_tekston(Vojo) :-
-	file_directory_name(Vojo, Dosieraro),
+aldonu_tekston(ID, Vojo) :-
 	file_base_name(Vojo, Nomo),
 	split_string(Nomo, "-_.", "", [Lingvcheno, Ero, "mmd"]),
 	atom_string(Lingvo, Lingvcheno),
-	assert(fonta_teksto(Dosieraro, Lingvo, Ero, Vojo)).
+	assert(fonta_teksto(ID, Lingvo, Ero, Vojo)).
 
-metu_tekstojn(Vojo) :-
+metu_tekstojn(ID, Vojo) :-
 	string_concat(Vojo, "/*.mmd", Vojo2),
 	expand_file_name(Vojo2, Listo),
-	maplist(aldonu_tekston, Listo).
+	maplist(aldonu_tekston(ID), Listo).
 
-legu_paghon(Vojo) :-
+legu_paghon(Vojo, ID) :-
 	string_concat(Vojo, "/meta.json", Meta),
 	legu_json(Meta, Dikto),
-	assert(pagho(Vojo)),
-	metu_atributojn(Vojo, Dikto),
-	metu_tekstojn(Vojo),
-	(lega_hoko(Vojo, Dikto), fail; true).
+	ID = vojo(Vojo),
+	assert(pagho(ID)),
+	metu_atributojn(ID, Dikto),
+	metu_tekstojn(ID, Vojo),
+	(lega_hoko(ID, Vojo, Dikto), fail; true).
 
-legu_dosieron(Patro, Vojo) :-
-	legu_dosieron(Vojo),
-	assert(patro(Patro, Vojo)).
+legu_dosieron_kun_patro(Patro, Vojo) :-
+	legu_dosieron(Vojo, ID),
+	assert(patro(Patro, ID)).
 
-legu_dosieron(Vojo) :-
-	legu_paghon(Vojo),
+legu_dosieron(Vojo, ID) :-
+	legu_paghon(Vojo, ID),
 	string_concat(Vojo, "/*", Vojo2),
 	expand_file_name(Vojo2, Dosieroj),
 	include(exists_directory, Dosieroj, Dosieraroj),
-	maplist(legu_dosieron(Vojo), Dosieraroj).
+	maplist(legu_dosieron_kun_patro(ID), Dosieraroj).

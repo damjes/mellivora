@@ -65,13 +65,13 @@ $ swipl -s kodo/konsili.pl
 kaj sekve vi diru, ke Prolog devas konstrui ĉiajn datumojn el fonto:
 
 ```
-?- legu_dosieron(fonto).
+?- legu_dosieron(fonto, ID).
 ```
 
-Tio estas grava, ke vi finas tion kun `.`, sen tio Prolog atendus por fino de instrukcio. Naturale, `fonto` estas dosieraro kun fonto de via retejo, kion vi kreis. Se vi bezonas ion specialan, vi skribu:
+Tio estas grava, ke vi finas tion kun `.`, sen tio Prolog atendus por fino de instrukcio. Ankaŭ gravas, ke `ID` devas komenci per granda litero, alie tio fiaskos. `ID` estos identigilo de ĉefa paĝo (se oni bezonas). Naturale, `fonto` estas dosieraro kun fonto de via retejo, kion vi kreis. Se vi bezonas ion specialan, vi skribu:
 
 ```
-?- legu_dosieron('ia/vojo/al/fonto').
+?- legu_dosieron('ia/vojo/al/fonto', ID).
 ```
 
 Prolog devas diri `true`, kaj tio signifas, ke ĉio ŝajne estas bonega. Nun vi povas generi retejon:
@@ -85,7 +85,7 @@ Sekve, vi prenu `Stir+D` aŭ skribu `halt.` por fermi Prolog.
 Vi ankaŭ povas skribi tiajn tri en unu instrukcio:
 
 ```
-?- legu_dosieron(fonto), generu_retejon, halt.
+?- legu_dosieron(fonto, ID), generu_retejon, halt.
 ```
 
 Ŝablono
