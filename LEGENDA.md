@@ -8,7 +8,7 @@ Generilo de statikaj paĝoj
 Informacioj por programistoj
 ----------------------------
 
-- **Oficiala retpaĝo kun fonto:** https://gitlab.matma6.net/matma6/statikaRetpagho.
+- **Oficiala retpaĝo kun fonto:** https://github.com/matma6/statikaRetpagho.
 - **Ĉefa lingvo:** Esperanto kun h-sistemo, do kutimiĝu :)
 - **Permesilo:** Esperanta traduko de M6PL, estas en `PERMESILO.md`.
 - **Deŝovo:** Ni uzas TAB klavon, do kutimiĝu :)
