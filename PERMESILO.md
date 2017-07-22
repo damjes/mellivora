@@ -8,4 +8,4 @@ Vi havas kvar fundamentajn liberecojn:
 - La libereco por disdoni kopiojn, do vi povas helpi vian najbaron (libereco 2).
 - La libereco por plibonigi la programon, kaj disdoni viajn plibonigojn al la publiko, por helpi ĉiujn (libereco 3). Atingo al la fontkodo estas antaŭkondiĉo por tio ĉi.
 
-Vi ne povas malpermesi ia de supraj liberecoj por iu. Vi ne povas permesi, ke iu malpermesas ia de supraj liberecoj en tia produkto aŭ en produkto, kio bazigas de tia produkto.
+Vi ne povas malpermesi ia de supraj liberecoj por iu. Vi ne povas permesi, ke iu malpermesas ia de supraj liberecoj en tia produkto aŭ en produkto, kio baziĝas de tia produkto.
