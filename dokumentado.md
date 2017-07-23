@@ -28,7 +28,8 @@ Ankaŭ Vi bezonas MultiMarkDown en Via `PATH`.
 Sekve Vi bezonas kodon - Vi povas preni tion el ia Gita deponejo:
 
 - https://github.com/damjes/mellivora.git - ĉefa
-- https://bitbucket.org/damjes/mellivora.git (kaj [retpaĝo](https://bitbucket.org/damjes/mellivora))
+- https://bitbucket.org/damjes/mellivora.git (kaj
+  [retpaĝo](https://bitbucket.org/damjes/mellivora))
 - https://gitlab.com/damjes/mellivora.git
 
 Vi havas pli ol du eblecojn:

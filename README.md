@@ -21,7 +21,8 @@ Generilo de statikaj paĝoj.
 
 ![Foto](https://upload.wikimedia.org/wikipedia/commons/c/c5/Ratel-africa.jpg)
 
-*Foto el [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ratel-africa.jpg)*
+*Foto el
+[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ratel-africa.jpg)*
 
 Ratelo (aŭ mielvorulo, se Vi volas) estas mia plej ŝatata besto. Malgranda,
 malalta, sed kuraĝa. Nesentema (kiel aŭtoro :) ) dank' al dika haŭto. Povas
