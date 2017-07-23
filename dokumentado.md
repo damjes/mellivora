@@ -1,5 +1,7 @@
 # Mellivora - dokumentado
 
+Bonvolu legi `README.md` por ĝeneralaj informacioj.
+
 ## Instalado
 
 ### Prolog
