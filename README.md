@@ -23,9 +23,13 @@ Generilo de statikaj paĝoj.
 
 *Foto el [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ratel-africa.jpg)*
 
-Ratelo (aŭ Mielvorulo, se Vi volas) estas aŭtora plej ŝatata besto. Malgranda,
-malalta sed kuraĝa. Nesentema (kiel aŭtoro :) ) dank' al dika haŭto. Povas
-batali kontraŭ kobroj ([batalo kun serpento [YouTube]](https://www.youtube.com/watch?v=2JneqIVzfoY)), junaj krokoiloj aŭ junaj leonoj. Povas ŝteli manĝon el leopardoj. Tre inteligenta ekz. povas konstrui ŝtuparon ([kelkaj forkuradoj [YouTube]](https://www.youtube.com/watch?v=c36UNSoJenI)).
+Ratelo (aŭ mielvorulo, se Vi volas) estas mia plej ŝatata besto. Malgranda,
+malalta, sed kuraĝa. Nesentema (kiel aŭtoro :) ) dank' al dika haŭto. Povas
+batali kontraŭ kobroj ([batalo kun serpento
+ [YouTube]](https://www.youtube.com/watch?v=2JneqIVzfoY)), junaj krokoiloj aŭ
+junaj leonoj. Povas ŝteli manĝon el leopardoj. Tre inteligenta ekz. povas
+konstrui ŝtuparon ([kelkaj forkuradoj
+	[YouTube]](https://www.youtube.com/watch?v=c36UNSoJenI)).
 
 > Cus like the honeybadger, we don't fuckin' caaare.
 >
@@ -36,7 +40,7 @@ batali kontraŭ kobroj ([batalo kun serpento [YouTube]](https://www.youtube.com/
 17a sekundo*
 
 Latina nomo estas (laŭ mi) pli bela: *Mellivora capensis*. Do, la nomo estas
-Mellivora
+Mellivora.
 
 ## Kio estas tio?
 
